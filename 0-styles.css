@@ -1,0 +1,162 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 20px;
+    padding: 20px;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex; 
+    margin-left: 340px;
+    gap: 40px;
+}
+
+#menu-toggle {
+    display: none; 
+}
+
+.hamburger {
+    display: none; 
+    flex-direction: column;
+    cursor: pointer;
+    margin-left: 60px;
+}
+
+.bar {
+    height: 3px;
+    width: 30px;
+    margin: 4px 0;
+}
+
+@media (max-width: 768px) {
+    .nav-list {
+        display: none; 
+        flex-direction: column;
+        position: absolute;
+        top: 60px; 
+        left: 0;   
+        width: 100%;
+        z-index: 1000; 
+        margin-left: 180px;
+    }
+    #menu-toggle:checked + .hamburger + nav .nav-list {
+        display: flex; 
+    }
+
+    .hamburger {
+        display: flex; 
+    }
+}
+
+/* New styles */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a:hover, a:active {
+    color: #FF6565;
+}
+
+button:hover, button:active {
+    opacity: 0.9;
+}
+
+@media only screen and (max-width: 480px) {
+    body {
+        font-size: 14px;
+        padding: 10px;
+    }
+    .desktop-only {
+        display: none;
+    }
+    .mobile-only {
+        display: block;
+    }
+}
+
+.background-section {
+    background-image: url(headphones_hero_1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 600px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: auto;
+    padding: 20px;
+}
+
+.nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    margin-left: 520px; 
+}
+
+.nav-list li {
+    margin-right: 60px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: white;
+    color: inherit;
+    padding: 10px 15px;
+    font-weight: bold;
+}
+
+.nav-list a:hover {
+    color: white;
+}
+
+.call-to-action {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.call-to-action-button {
+    background-color: #FF6565;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.call-to-action-button:hover {
+    background-color: #FF6565;
+}
+
+.first-page-content {
+    display: block;
+    justify-content: baseline;
+    align-items: left;
+    position: absolute;
+    bottom: 0%;
+    left: 20%;
+    margin: 0% auto;
+    padding: 20px;
+    text-align: left;
+    width: 60%;
+}
+
+.first-page-heading, .paragraph-one, .paragraph-two {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
